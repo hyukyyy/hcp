@@ -22,6 +22,7 @@ function App() {
         <Questions
           question={questions[index]}
           nextPage={() => setIndex(index + 1)}
+          skipQuestion={() => setIndex(index + 2)}
         />
       )}
     </div>

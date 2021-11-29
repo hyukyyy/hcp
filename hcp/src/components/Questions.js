@@ -1,3 +1,4 @@
+import { ArrowRightOutlined } from "@ant-design/icons";
 import { Button, Radio } from "antd";
 
 const Questions = ({ question, nextPage }) => {
@@ -5,7 +6,7 @@ const Questions = ({ question, nextPage }) => {
     <div
       style={{
         flex: 1,
-        // background: "#F291A3",
+        background: "#FBF7E9",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -58,15 +59,21 @@ const Questions = ({ question, nextPage }) => {
           <Button
             onClick={() => nextPage()}
             style={{
-              width: "20rem",
+              width: "30rem",
               height: "10rem",
               borderRadius: 100,
+              borderWidth: 0,
+              background: "#333333",
+              color: "white",
+              padding: 30,
 
               fontSize: "5rem",
               fontFamily: "'Nanum Brush Script', 'cursive'",
             }}
           >
-            다음문항
+            <div style={{ color: "white" }}>
+              다음문항 <ArrowRightOutlined />
+            </div>
           </Button>
         </div>
       </div>

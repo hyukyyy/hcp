@@ -139,17 +139,21 @@ const Intro = ({ nextPage }) => {
           <Button
             onClick={() => nextPage()}
             style={{
-              width: "20rem",
+              width: "30rem",
               height: "10rem",
               borderRadius: 100,
-              background: "#FBF7E9",
               borderWidth: 0,
+              background: "#333333",
+              color: "white",
+              padding: 30,
 
               fontSize: "5rem",
               fontFamily: "'Nanum Brush Script', 'cursive'",
             }}
           >
-            검사시작 <ArrowRightOutlined />
+            <div style={{ color: "white" }}>
+              검사시작 <ArrowRightOutlined />
+            </div>
           </Button>
         </div>
       </div>
