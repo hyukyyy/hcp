@@ -12,7 +12,14 @@ function App() {
   const [index, setIndex] = useState(0);
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100vh",
+        fontFamily: "'Yeon Sung', 'cursive'",
+      }}
+    >
       <Header />
 
       {index === 0 ? (

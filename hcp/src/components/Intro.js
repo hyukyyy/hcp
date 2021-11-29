@@ -11,7 +11,7 @@ const Intro = ({ nextPage }) => {
         justifyContent: "center",
         alignItems: "center",
 
-        fontFamily: "'Nanum Brush Script', 'cursive'",
+        fontFamily: "'Yeon Sung', 'cursive'",
       }}
     >
       <div
@@ -40,7 +40,7 @@ const Intro = ({ nextPage }) => {
         >
           <div
             style={{
-              fontSize: "6rem",
+              fontSize: "5rem",
               marginBottom: "3rem",
               fontFamily: "'Petit Formal Script', 'cursive'",
             }}
@@ -51,10 +51,10 @@ const Intro = ({ nextPage }) => {
             style={{
               flex: 1,
               width: "100%",
-              fontSize: "6rem",
+              fontSize: "5rem",
               marginBottom: "3rem",
               textOverflow: "unset",
-              fontFamily: "'Nanum Brush Script', 'cursive'",
+              fontFamily: "'Yeon Sung', 'cursive'",
             }}
           >
             <div
@@ -168,7 +168,7 @@ const Intro = ({ nextPage }) => {
               padding: 30,
 
               fontSize: "5rem",
-              fontFamily: "'Nanum Brush Script', 'cursive'",
+              fontFamily: "'Yeon Sung', 'cursive'",
             }}
           >
             <div style={{ color: "white" }}>

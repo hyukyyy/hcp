@@ -11,7 +11,7 @@ const Questions = ({ question, nextPage }) => {
         justifyContent: "center",
         alignItems: "center",
 
-        fontFamily: "'Nanum Brush Script', 'cursive'",
+        fontFamily: "'Yeon Sung', 'cursive'",
       }}
     >
       <div
@@ -68,7 +68,7 @@ const Questions = ({ question, nextPage }) => {
               padding: 30,
 
               fontSize: "5rem",
-              fontFamily: "'Nanum Brush Script', 'cursive'",
+              fontFamily: "'Yeon Sung', 'cursive'",
             }}
           >
             <div style={{ color: "white" }}>

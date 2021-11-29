@@ -32,8 +32,7 @@ const Ending = ({ nextPage }) => {
         justifyContent: "center",
         alignItems: "center",
 
-        fontFamily: "'Nanum Brush Script', 'cursive'",
-      }}
+ fontFamily: "'Yeon Sung', 'cursive'",      }}
     >
       <div
         style={{
@@ -60,7 +59,7 @@ const Ending = ({ nextPage }) => {
         >
           <div
             style={{
-              fontSize: "6rem",
+              fontSize: "5rem",
               marginBottom: "3rem",
               fontFamily: "'Petit Formal Script', 'cursive'",
             }}
@@ -74,8 +73,7 @@ const Ending = ({ nextPage }) => {
               fontSize: "8rem",
               marginBottom: "3rem",
               textOverflow: "unset",
-              fontFamily: "'Nanum Brush Script', 'cursive'",
-              display: "flex",
+       fontFamily: "'Yeon Sung', 'cursive'",              display: "flex",
               justifyContent: "center",
               alignItems: "center",
             }}

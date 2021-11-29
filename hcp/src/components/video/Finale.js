@@ -61,28 +61,42 @@ const Finale = ({ getFinal }) => {
           fontSize: "5rem",
         }}
       >
-        {timePass >= 1 && <div>'@chaenchaenii_i' 님의 분석결과입니다.</div>}
-        <br />
-        {timePass >= 3 && <div>'@chaenchaenii_i' 님의 마음은..</div>}
-        <br />
-        {timePass >= 5 && <div>어렵네요. 솔직히 잘 모르겠습니다.</div>}
-        <br />
-        {timePass >= 8 && <div>당황하셨나요...?</div>}
-        <br />
-        {timePass >= 10 && (
-          <div>지금쯤 이게 뭐지...? 라고 생각하실 것 같은데</div>
+        {timePass >= 1 && (
+          <div style={{ marginBottom: 20 }}>
+            '@chaenchaenii_i' 님의 분석결과입니다.
+          </div>
         )}
-        <br />
-        {timePass >= 12 && <div>그런 채은님을 위해 준비했습니다!</div>}
-        <br />
+        {timePass >= 3 && (
+          <div style={{ marginBottom: 20 }}>
+            '@chaenchaenii_i' 님의 마음은..
+          </div>
+        )}
+        {timePass >= 5 && (
+          <div style={{ marginBottom: 20 }}>
+            어렵네요. 솔직히 잘 모르겠습니다.
+          </div>
+        )}
+        {timePass >= 8 && (
+          <div style={{ marginBottom: 20 }}>당황하셨나요...?</div>
+        )}
+        {timePass >= 10 && (
+          <div style={{ marginBottom: 20 }}>
+            지금쯤 이게 뭐지...? 라고 생각하실 것 같은데
+          </div>
+        )}
+        {timePass >= 12 && (
+          <div style={{ marginBottom: 20 }}>
+            그런 채은님을 위해 준비했습니다!
+          </div>
+        )}
         {timePass >= 15 && (
-          <div>
+          <div style={{ marginBottom: 20 }}>
             아마도 지금 앞에 계실 멋진 남성분이 꼭 하고싶은 말이 있대요!
           </div>
         )}
-        <br />
-        {timePass >= 18 && <div>한번 들어보실래요?</div>}
-        <br />
+        {timePass >= 18 && (
+          <div style={{ marginBottom: 20 }}>한번 들어보실래요?</div>
+        )}
         {timePass >= 20 && (
           <Button
             onClick={() => getFinal()}
@@ -96,7 +110,7 @@ const Finale = ({ getFinal }) => {
               padding: 30,
 
               fontSize: "5rem",
-              fontFamily: "'Nanum Brush Script', 'cursive'",
+              fontFamily: "'Yeon Sung', 'cursive'",
             }}
           >
             <div style={{ color: "white" }}>꼭 눌러주세요</div>
