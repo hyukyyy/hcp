@@ -80,7 +80,12 @@ const Ending = ({ nextPage }) => {
               alignItems: "center",
             }}
           >
-            {timeCount ? <FakeCounting /> : <Finale />}
+            {!showFinal &&
+              (timeCount ? (
+                <FakeCounting />
+              ) : (
+                <Finale getFinal={() => setShowFinal(true)} />
+              ))}
             {showFinal && (
               <Video className="" src={require("../img/testing.mp4").default} />
             )}
