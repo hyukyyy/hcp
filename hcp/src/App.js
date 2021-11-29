@@ -4,11 +4,12 @@ import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Questions from "./components/Questions";
 import questions from "./static/questions";
+import "./styles/index.css";
 import "./styles/reset.css";
 
 function App() {
-  const [index, setIndex] = useState(0);
   const questionLength = questions.length;
+  const [index, setIndex] = useState(questionLength);
 
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>

@@ -1,4 +1,28 @@
+import { useEffect, useRef, useState } from "react";
+import FakeCounting from "./FakeCounting";
+import Finale from "./video/Finale";
+import Video from "./video/Video";
+
 const Ending = ({ nextPage }) => {
+  const ref = useRef();
+  const [showControl, setShowControl] = useState(false);
+
+  const [timeCount, setTImeCount] = useState(true);
+  const [showFinal, setShowFinal] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setTImeCount(false), 3000);
+  });
+
+  const handleControlVisible = () => {
+    if (!showControl) {
+      setShowControl(true);
+      setTimeout(() => {
+        setShowControl(false);
+      }, 2000);
+    }
+  };
+
   return (
     <div
       style={{
@@ -13,7 +37,6 @@ const Ending = ({ nextPage }) => {
     >
       <div
         style={{
-          //   background: "white",
           width: "90vw",
           height: "80vh",
           display: "flex",
@@ -52,9 +75,15 @@ const Ending = ({ nextPage }) => {
               marginBottom: "3rem",
               textOverflow: "unset",
               fontFamily: "'Nanum Brush Script', 'cursive'",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            여기에 영상이 들어가면 좋을 것 같다.
+            {timeCount ? <FakeCounting /> : <Finale />}
+            {showFinal && (
+              <Video className="" src={require("../img/testing.mp4").default} />
+            )}
           </div>
         </div>
       </div>
