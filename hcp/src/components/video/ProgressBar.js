@@ -8,18 +8,15 @@ const ProgressBar = ({
   onMouseDown,
   onMouseUp,
 }) => {
-//   const classProps = classNames(styles.default, className);
+  //   const classProps = classNames(styles.default, className);
   const percentNum = (value / max || 0) * 100;
   const percent = `${percentNum}%`;
 
   return (
-    <div 
+    <div
     // className={classProps}
     >
-      <div 
-    //   className={styles.bar} 
-      style={{ width: percent }}
-      >
+      <div className="progressBar bar" style={{ width: percent }}>
         <input
           onChange={(e) => onChange(parseInt(e.target.value, 10))}
           onTouchStart={onMouseDown}
@@ -29,7 +26,7 @@ const ProgressBar = ({
           max="100"
           step="1"
           value={percentNum}
-        //   className={styles.controller}
+          className="controller"
         />
       </div>
     </div>

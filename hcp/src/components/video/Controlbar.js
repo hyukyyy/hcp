@@ -1,8 +1,8 @@
 import {
-    AudioMutedOutlined,
-    PauseCircleOutlined,
-    PlayCircleOutlined,
-    SoundOutlined
+  AudioMutedOutlined,
+  PauseCircleOutlined,
+  PlayCircleOutlined,
+  SoundOutlined
 } from "@ant-design/icons";
 import React, { memo, useState } from "react";
 import ProgressBar from "./ProgressBar";
@@ -53,13 +53,7 @@ const Controlbar = ({
 
   return (
     <>
-      <div
-        className="controlBar"
-        style={{
-          width: "100%",
-          height: "100%",
-        }}
-      >
+      <div className="controlBar">
         <span className="text starttime">{toTimeString(startTime)}</span>
         <ProgressBar
           max={totalTime}

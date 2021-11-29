@@ -9,7 +9,7 @@ import "./styles/reset.css";
 
 function App() {
   const questionLength = questions.length;
-  const [index, setIndex] = useState(questionLength);
+  const [index, setIndex] = useState(0);
 
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
