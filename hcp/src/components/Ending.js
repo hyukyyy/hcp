@@ -32,7 +32,8 @@ const Ending = ({ nextPage }) => {
         justifyContent: "center",
         alignItems: "center",
 
- fontFamily: "'Yeon Sung', 'cursive'",      }}
+        fontFamily: "'Yeon Sung', 'cursive'",
+      }}
     >
       <div
         style={{
@@ -73,7 +74,8 @@ const Ending = ({ nextPage }) => {
               fontSize: "8rem",
               marginBottom: "3rem",
               textOverflow: "unset",
-       fontFamily: "'Yeon Sung', 'cursive'",              display: "flex",
+              fontFamily: "'Yeon Sung', 'cursive'",
+              display: "flex",
               justifyContent: "center",
               alignItems: "center",
             }}

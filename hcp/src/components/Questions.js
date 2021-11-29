@@ -16,7 +16,6 @@ const Questions = ({ question, nextPage }) => {
     >
       <div
         style={{
-          //   background: "white",
           width: "90vw",
           height: "80vh",
           display: "flex",
