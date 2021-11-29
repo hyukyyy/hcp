@@ -3,6 +3,7 @@ const Ending = ({ nextPage }) => {
     <div
       style={{
         flex: 1,
+        background: "#FBF7E9",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

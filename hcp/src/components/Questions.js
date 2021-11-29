@@ -38,7 +38,7 @@ const Questions = ({ question, nextPage }) => {
             justifyContent: "space-between",
           }}
         >
-          <div style={{ fontSize: "10rem", marginBottom: "3rem" }}>
+          <div style={{ fontSize: "7rem", marginBottom: "3rem" }}>
             {question.title}
           </div>
           <Radio.Group>
@@ -47,7 +47,7 @@ const Questions = ({ question, nextPage }) => {
                 <Radio
                   style={{
                     display: "block",
-                    fontSize: "8rem",
+                    fontSize: "7rem",
                     marginBottom: "3rem",
                   }}
                 >

@@ -5,6 +5,7 @@ const Intro = ({ nextPage }) => {
   return (
     <div
       style={{
+        background: "#FBF7E9",
         flex: 1,
         display: "flex",
         justifyContent: "center",
@@ -69,7 +70,7 @@ const Intro = ({ nextPage }) => {
             >
               <div
                 style={{
-                  flex: 3,
+                  flex: 4,
                   color: "white",
                   padding: 50,
                   background: "#333333",
@@ -88,7 +89,7 @@ const Intro = ({ nextPage }) => {
               </div>
               <div
                 style={{
-                  flex: 3,
+                  flex: 4,
                   color: "black",
                   padding: 50,
                   background: "#FBF7E9",
@@ -107,7 +108,7 @@ const Intro = ({ nextPage }) => {
               </div>
               <div
                 style={{
-                  flex: 3,
+                  flex: 4,
                   color: "white",
                   padding: 50,
                   background: "#FC674E",
@@ -124,6 +125,25 @@ const Intro = ({ nextPage }) => {
                 가능하면 답변 시 '중립'을 <br />
                 선택하지 마십시오.
               </div>
+              {/* <div
+                style={{
+                  flex: 4,
+                  color: "white",
+                  padding: 50,
+                  background: "#3F96A3",
+                  borderRadius: 30,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginBottom: 10,
+                  borderColor: "grey",
+                  borderStyle: "solid",
+                  borderWidth: 1,
+                }}
+              >
+                * 교제 상대가 있는 경우, 상대에게 직접 질문하며 진행하실 경우
+                정확도를 향상 시킬 수 있습니다.
+              </div> */}
             </div>
             <div style={{ padding: 30, marginBottom: 50 }}>
               본 검사는 회원님의 질문에 대한

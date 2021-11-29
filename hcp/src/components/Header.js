@@ -18,10 +18,11 @@ const Header = () => {
         borderWidth: 1,
         borderStyle: "solid",
         borderColor: "#F0F0F2",
+        
       }}
       className="headerWrapper"
     >
-      Header
+      HCP
     </div>
   );
 };
