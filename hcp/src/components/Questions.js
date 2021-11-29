@@ -58,9 +58,9 @@ const Questions = ({ question, nextPage }) => {
           <Button
             onClick={() => nextPage()}
             style={{
-              width: "15rem",
+              width: "20rem",
               height: "10rem",
-              borderRadius: 20,
+              borderRadius: 100,
 
               fontSize: "5rem",
               fontFamily: "'Nanum Brush Script', 'cursive'",
