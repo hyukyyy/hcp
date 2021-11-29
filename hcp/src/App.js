@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Ending from "./components/Ending";
+import Header from "./components/Header";
+import Intro from "./components/Intro";
+import Questions from "./components/Questions";
+import questions from "./static/questions";
+import "./styles/reset.css";
 
 function App() {
+  const [index, setIndex] = useState(0);
+  const questionLength = questions.length;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
+      <Header />
+
+      {index === 0 ? (
+        <Intro nextPage={() => setIndex(index + 1)} />
+      ) : index === questionLength ? (
+        <Ending />
+      ) : (
+        <Questions
+          question={questions[index]}
+          nextPage={() => setIndex(index + 1)}
+        />
+      )}
     </div>
   );
 }
