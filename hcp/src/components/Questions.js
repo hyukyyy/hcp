@@ -64,7 +64,10 @@ const Questions = ({ question, nextPage }) => {
             })}
           </Radio.Group>
           <Button
-            onClick={() => nextPage()}
+            onClick={() => {
+              if (answer === 50) return;
+              nextPage();
+            }}
             style={{
               display: "flex",
               alignItems: "center",

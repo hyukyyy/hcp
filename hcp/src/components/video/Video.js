@@ -77,7 +77,8 @@ const Video = ({ className, src }) => {
           width: "100%",
         }}
         loop={true}
-        muted={true}
+        muted={false}
+        controls={true}
         ref={ref}
         playsInline={true}
         onClick={handleControlVisible}

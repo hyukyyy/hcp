@@ -91,7 +91,8 @@ const Finale = ({ getFinal }) => {
         )}
         {timePass >= 15 && (
           <div style={{ marginBottom: 20 }}>
-            아마도 지금 앞에 계실 멋진 남성분이 꼭 하고싶은 말이 있대요!
+            아마도 지금 앞에 계실 멋진 남성분이
+            <br />꼭 하고싶은 말이 있대요!
           </div>
         )}
         {timePass >= 18 && (

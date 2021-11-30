@@ -89,7 +89,10 @@ const Ending = ({ nextPage }) => {
                 <Finale getFinal={() => setShowFinal(true)} />
               ))}
             {showFinal && (
-              <Video className="" src={require("../img/testing.mp4").default} />
+              <Video
+                className="video"
+                src={require("../img/testing.mp4").default}
+              />
             )}
           </div>
         </div>
