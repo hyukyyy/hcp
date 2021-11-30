@@ -67,6 +67,7 @@ const Questions = ({ question, nextPage }) => {
             onClick={() => {
               if (answer === 50) return;
               nextPage();
+              setAnswer(50);
             }}
             style={{
               display: "flex",
