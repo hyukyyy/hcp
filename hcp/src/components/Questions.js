@@ -2,7 +2,13 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 import { Button, Radio } from "antd";
 import { useState } from "react";
 
-const Questions = ({ question, nextPage }) => {
+const Questions = ({
+  question,
+  nextPage,
+  questionLength,
+  setAnswerList,
+  answerList,
+}) => {
   const [answer, setAnswer] = useState(50);
   const [noAnswerAlert, setNoAnswerAlert] = useState(false);
 
@@ -53,6 +59,7 @@ const Questions = ({ question, nextPage }) => {
             {question.selections.map((selection, idx) => {
               return (
                 <Radio
+                  key={idx}
                   value={idx}
                   style={{
                     display: "block",
@@ -76,6 +83,13 @@ const Questions = ({ question, nextPage }) => {
                 setNoAnswerAlert(true);
                 return;
               }
+              setAnswerList(
+                answerList.concat({
+                  title: question.title,
+                  answerTxt: question.selections[answer].text,
+                  answer: answer,
+                })
+              );
               nextPage();
               setAnswer(50);
               setNoAnswerAlert(false);
