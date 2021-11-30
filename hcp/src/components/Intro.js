@@ -11,7 +11,7 @@ const Intro = ({ nextPage }) => {
         justifyContent: "center",
         alignItems: "center",
 
-        fontFamily: "'Yeon Sung', 'cursive'",
+        fontFamily: "MaruBuri-Regular",
       }}
     >
       <div
@@ -38,7 +38,7 @@ const Intro = ({ nextPage }) => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "space-around",
-            marginTop: 20,
+            marginTop: 30,
           }}
         >
           <div
@@ -54,10 +54,10 @@ const Intro = ({ nextPage }) => {
             style={{
               flex: 1,
               width: "100%",
-              fontSize: 20,
+              fontSize: 15,
               marginBottom: "3rem",
               textOverflow: "unset",
-              fontFamily: "'Yeon Sung', 'cursive'",
+              fontFamily: "MaruBuri-Regular",
 
               display: "flex",
               flexDirection: "column",
@@ -69,7 +69,7 @@ const Intro = ({ nextPage }) => {
                 display: "flex",
                 height: 300,
                 // opacity: 0.5,
-                fontSize: 20,
+                fontSize: 18,
                 color: "white",
                 flexDirection: "column",
                 marginBottom: 50,
@@ -168,17 +168,17 @@ const Intro = ({ nextPage }) => {
             style={{
               display: "flex",
               alignItems: "center",
-              width: 150,
+              width: 155,
               height: 50,
               borderRadius: 100,
               borderWidth: 0,
               background: "#333333",
               color: "white",
               padding: 30,
-              marginBottom: 10,
+              marginBottom: 30,
 
-              fontSize: 20,
-              fontFamily: "'Yeon Sung', 'cursive'",
+              fontSize: 18,
+        fontFamily: "MaruBuri-Regular",
             }}
           >
             <div style={{ color: "white" }}>

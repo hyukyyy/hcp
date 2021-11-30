@@ -38,7 +38,7 @@ function App() {
         flexDirection: "column",
         height: "100%",
         width: 420,
-        fontFamily: "'Yeon Sung', 'cursive'",
+        fontFamily: "MaruBuri-Regular",
       }}
     >
       <Header />

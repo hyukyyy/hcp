@@ -21,7 +21,7 @@ const Questions = ({
         justifyContent: "center",
         alignItems: "center",
 
-        fontFamily: "'Yeon Sung', 'cursive'",
+        fontFamily: "MaruBuri-Regular",
       }}
     >
       <div
@@ -31,8 +31,8 @@ const Questions = ({
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          marginTop: 10,
-          marginBottom: 10,
+          marginTop: 20,
+          marginBottom: 20,
 
           borderWidth: 2,
           borderStyle: "dashed",
@@ -49,7 +49,7 @@ const Questions = ({
             justifyContent: "space-between",
           }}
         >
-          <div style={{ fontSize: 30, marginBottom: "3rem", marginTop: 20 }}>
+          <div style={{ fontSize: 30, marginBottom: "3rem", marginTop: 30 }}>
             {question.title}
           </div>
           <Radio.Group
@@ -63,7 +63,7 @@ const Questions = ({
                   value={idx}
                   style={{
                     display: "block",
-                    fontSize: 30,
+                    fontSize: 25,
                     marginBottom: "3rem",
                   }}
                 >
@@ -98,17 +98,17 @@ const Questions = ({
               display: "flex",
               alignItems: "center",
 
-              width: 150,
+              width: 155,
               height: 50,
               borderRadius: 100,
               borderWidth: 0,
               background: "#333333",
               color: "white",
               padding: 30,
-              marginBottom: 10,
+              marginBottom: 30,
 
-              fontSize: 20,
-              fontFamily: "'Yeon Sung', 'cursive'",
+              fontSize: 18,
+              fontFamily: "MaruBuri-Regular",
             }}
           >
             <div

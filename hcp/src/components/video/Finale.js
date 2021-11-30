@@ -91,7 +91,7 @@ const Finale = ({ getFinal }) => {
         )}
         {timePass >= 15 && (
           <div style={{ marginBottom: 20 }}>
-            아마도 지금 앞에 계실 멋진 남성분이
+            아마 지금 앞에 계신 멋진 남성분이
             <br />꼭 하고싶은 말이 있대요!
           </div>
         )}
@@ -105,7 +105,7 @@ const Finale = ({ getFinal }) => {
               display: "flex",
               alignItems: "center",
 
-              width: 150,
+              width: 200,
               height: 50,
               borderRadius: 100,
               borderWidth: 0,
@@ -114,7 +114,7 @@ const Finale = ({ getFinal }) => {
               padding: 30,
 
               fontSize: 20,
-              fontFamily: "'Yeon Sung', 'cursive'",
+              fontFamily: "MaruBuri-Regular",
             }}
           >
             <div style={{ color: "white" }}>꼭 눌러주세요</div>
