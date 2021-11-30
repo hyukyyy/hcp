@@ -16,13 +16,14 @@ const Questions = ({ question, nextPage }) => {
     >
       <div
         style={{
-          width: "90vw",
-          height: "80vh",
+          width: "90%",
+          height: "80%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          marginTop: 10,
 
-          borderWidth: 5,
+          borderWidth: 2,
           borderStyle: "dashed",
           borderColor: "#333333",
         }}
@@ -30,14 +31,14 @@ const Questions = ({ question, nextPage }) => {
         <div
           style={{
             width: "80%",
-            height: "90%",
+            height: 860,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "space-between",
           }}
         >
-          <div style={{ fontSize: "7rem", marginBottom: "3rem" }}>
+          <div style={{ fontSize: 30, marginBottom: "3rem", marginTop: 20 }}>
             {question.title}
           </div>
           <Radio.Group>
@@ -46,7 +47,7 @@ const Questions = ({ question, nextPage }) => {
                 <Radio
                   style={{
                     display: "block",
-                    fontSize: "7rem",
+                    fontSize: 30,
                     marginBottom: "3rem",
                   }}
                 >
@@ -58,19 +59,30 @@ const Questions = ({ question, nextPage }) => {
           <Button
             onClick={() => nextPage()}
             style={{
-              width: "30rem",
-              height: "10rem",
+              display: "flex",
+              alignItems: "center",
+
+              width: 150,
+              height: 50,
               borderRadius: 100,
               borderWidth: 0,
               background: "#333333",
               color: "white",
               padding: 30,
+              marginBottom: 10,
 
-              fontSize: "5rem",
+              fontSize: 20,
               fontFamily: "'Yeon Sung', 'cursive'",
             }}
           >
-            <div style={{ color: "white" }}>
+            <div
+              style={{
+                color: "white",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               다음문항 <ArrowRightOutlined />
             </div>
           </Button>

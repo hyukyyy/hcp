@@ -17,13 +17,14 @@ const Intro = ({ nextPage }) => {
       <div
         style={{
           //   background: "white",
-          width: "90vw",
-          height: "80vh",
+          width: "90%",
+          height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          marginTop: 10,
 
-          borderWidth: 5,
+          borderWidth: 2,
           borderStyle: "dashed",
           borderColor: "#333333",
         }}
@@ -31,17 +32,18 @@ const Intro = ({ nextPage }) => {
         <div
           style={{
             width: "80%",
-            height: "90%",
+            height: 860,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "space-between",
+            justifyContent: "space-around",
+            marginTop: 20,
           }}
         >
           <div
             style={{
-              fontSize: "5rem",
-              marginBottom: "3rem",
+              fontSize: 30,
+              marginBottom: 10,
               fontFamily: "'Petit Formal Script', 'cursive'",
             }}
           >
@@ -51,18 +53,22 @@ const Intro = ({ nextPage }) => {
             style={{
               flex: 1,
               width: "100%",
-              fontSize: "5rem",
+              fontSize: 20,
               marginBottom: "3rem",
               textOverflow: "unset",
               fontFamily: "'Yeon Sung', 'cursive'",
+
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
             }}
           >
             <div
               style={{
                 display: "flex",
-                height: 1200,
+                height: 300,
                 // opacity: 0.5,
-                fontSize: "5rem",
+                fontSize: 20,
                 color: "white",
                 flexDirection: "column",
                 marginBottom: 50,
@@ -72,7 +78,7 @@ const Intro = ({ nextPage }) => {
                 style={{
                   flex: 4,
                   color: "white",
-                  padding: 50,
+                  padding: 10,
                   background: "#333333",
                   borderRadius: 30,
                   display: "flex",
@@ -91,7 +97,7 @@ const Intro = ({ nextPage }) => {
                 style={{
                   flex: 4,
                   color: "black",
-                  padding: 50,
+                  padding: 10,
                   background: "#FBF7E9",
                   borderRadius: 30,
                   display: "flex",
@@ -110,7 +116,7 @@ const Intro = ({ nextPage }) => {
                 style={{
                   flex: 4,
                   color: "white",
-                  padding: 50,
+                  padding: 10,
                   background: "#FC674E",
                   borderRadius: 30,
                   display: "flex",
@@ -145,12 +151,12 @@ const Intro = ({ nextPage }) => {
                 정확도를 향상 시킬 수 있습니다.
               </div> */}
             </div>
-            <div style={{ padding: 30, marginBottom: 50 }}>
+            <div style={{ padding: 10, marginBottom: 10, textAlign: "center" }}>
               본 검사는 회원님의 질문에 대한
               <br />
               답과 활동을 기반으로 진행됩니다.
             </div>
-            <div style={{ padding: 30 }}>
+            <div style={{ padding: 10, marginBottom: 10, textAlign: "center" }}>
               더 자세한 정보를 원하실 경우
               <br />
               추가 링크를 이용해주세요.
@@ -159,15 +165,18 @@ const Intro = ({ nextPage }) => {
           <Button
             onClick={() => nextPage()}
             style={{
-              width: "30rem",
-              height: "10rem",
+              display: "flex",
+              alignItems: "center",
+              width: 150,
+              height: 50,
               borderRadius: 100,
               borderWidth: 0,
               background: "#333333",
               color: "white",
               padding: 30,
+              marginBottom: 10,
 
-              fontSize: "5rem",
+              fontSize: 20,
               fontFamily: "'Yeon Sung', 'cursive'",
             }}
           >

@@ -9,30 +9,32 @@ import "./styles/reset.css";
 
 function App() {
   const questionLength = questions.length;
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(15);
 
   return (
     <div
       style={{
         display: "flex",
         flexDirection: "column",
-        height: "100vh",
+        height: "100%",
+        width: 420,
         fontFamily: "'Yeon Sung', 'cursive'",
       }}
     >
       <Header />
-
-      {index === 0 ? (
-        <Intro nextPage={() => setIndex(index + 1)} />
-      ) : index === questionLength ? (
-        <Ending />
-      ) : (
-        <Questions
-          question={questions[index]}
-          nextPage={() => setIndex(index + 1)}
-          skipQuestion={() => setIndex(index + 2)}
-        />
-      )}
+      <div style={{ height: 660 }}>
+        {index === 0 ? (
+          <Intro nextPage={() => setIndex(index + 1)} />
+        ) : index === questionLength ? (
+          <Ending />
+        ) : (
+          <Questions
+            question={questions[index]}
+            nextPage={() => setIndex(index + 1)}
+            skipQuestion={() => setIndex(index + 2)}
+          />
+        )}
+      </div>
     </div>
   );
 }

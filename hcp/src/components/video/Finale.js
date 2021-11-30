@@ -46,19 +46,19 @@ const Finale = ({ getFinal }) => {
       <div
         style={{
           width: "100%",
-          height: "90%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "space-between",
-          marginBottom: 100,
+          marginBottom: 30,
+          fontSize: 30,
         }}
       >
         분석결과
       </div>
       <div
         style={{
-          fontSize: "5rem",
+          fontSize: 20,
         }}
       >
         {timePass >= 1 && (
@@ -101,15 +101,18 @@ const Finale = ({ getFinal }) => {
           <Button
             onClick={() => getFinal()}
             style={{
-              width: "30rem",
-              height: "10rem",
+              display: "flex",
+              alignItems: "center",
+
+              width: 150,
+              height: 50,
               borderRadius: 100,
               borderWidth: 0,
               background: "#333333",
               color: "white",
               padding: 30,
 
-              fontSize: "5rem",
+              fontSize: 20,
               fontFamily: "'Yeon Sung', 'cursive'",
             }}
           >

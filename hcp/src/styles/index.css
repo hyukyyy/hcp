@@ -73,7 +73,7 @@
 }
 
 .progressBar {
-  width: 65vw;
+  width: 65%;
   height: 3px;
   background-color: gray;
   border-radius: 1.5px;
@@ -90,7 +90,7 @@
   position: absolute;
   top: 0px;
   margin: 0;
-  width: 65vw;
+  width: 65%;
   height: 3px;
   background-color: transparent;
   border-radius: 1.5px;

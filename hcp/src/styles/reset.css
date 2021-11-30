@@ -93,6 +93,10 @@ video {
   vertical-align: baseline;
   /* font-family: "Noto sans KR", sans-serif; */
 }
+html {
+  font-size: 10;
+  height: 800;
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -140,11 +144,10 @@ span.ant-radio {
   height: 100%;
 } */
 .headerWrapper {
-  position: absolute;
-  height: 300;
+  /* position: absolute; */
+  /* height: 300; */
   background: url("../img/marriage_opacity.jpg");
   background-size: cover;
-
   display: "flex";
   justify-content: "center";
   align-items: "center";

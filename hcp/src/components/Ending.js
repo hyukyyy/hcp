@@ -37,13 +37,14 @@ const Ending = ({ nextPage }) => {
     >
       <div
         style={{
-          width: "90vw",
-          height: "80vh",
+          width: "90%",
+          height: "80%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          marginTop: 10,
 
-          borderWidth: 5,
+          borderWidth: 2,
           borderStyle: "dashed",
           borderColor: "#333333",
         }}
@@ -60,8 +61,9 @@ const Ending = ({ nextPage }) => {
         >
           <div
             style={{
-              fontSize: "5rem",
+              fontSize: 30,
               marginBottom: "3rem",
+              marginTop: 20,
               fontFamily: "'Petit Formal Script', 'cursive'",
             }}
           >
