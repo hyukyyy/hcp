@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const Questions = ({ question, nextPage }) => {
   const [answer, setAnswer] = useState(50);
+  const [noAnswerAlert, setNoAnswerAlert] = useState(false);
 
   return (
     <div
@@ -25,6 +26,7 @@ const Questions = ({ question, nextPage }) => {
           alignItems: "center",
           justifyContent: "center",
           marginTop: 10,
+          marginBottom: 10,
 
           borderWidth: 2,
           borderStyle: "dashed",
@@ -63,11 +65,20 @@ const Questions = ({ question, nextPage }) => {
               );
             })}
           </Radio.Group>
+          {noAnswerAlert && (
+            <div style={{ color: "red", fontSize: 20 }}>
+              * 답변을 선택해주세요 *
+            </div>
+          )}
           <Button
             onClick={() => {
-              if (answer === 50) return;
+              if (answer === 50) {
+                setNoAnswerAlert(true);
+                return;
+              }
               nextPage();
               setAnswer(50);
+              setNoAnswerAlert(false);
             }}
             style={{
               display: "flex",
