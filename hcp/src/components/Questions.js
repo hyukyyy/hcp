@@ -1,7 +1,10 @@
 import { ArrowRightOutlined } from "@ant-design/icons";
 import { Button, Radio } from "antd";
+import { useState } from "react";
 
 const Questions = ({ question, nextPage }) => {
+  const [answer, setAnswer] = useState(50);
+
   return (
     <div
       style={{
@@ -41,10 +44,14 @@ const Questions = ({ question, nextPage }) => {
           <div style={{ fontSize: 30, marginBottom: "3rem", marginTop: 20 }}>
             {question.title}
           </div>
-          <Radio.Group>
-            {question.selections.map((selection) => {
+          <Radio.Group
+            value={answer}
+            onChange={(e) => setAnswer(e.target.value)}
+          >
+            {question.selections.map((selection, idx) => {
               return (
                 <Radio
+                  value={idx}
                   style={{
                     display: "block",
                     fontSize: 30,

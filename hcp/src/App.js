@@ -9,7 +9,7 @@ import "./styles/reset.css";
 
 function App() {
   const questionLength = questions.length;
-  const [index, setIndex] = useState(15);
+  const [index, setIndex] = useState(0);
 
   return (
     <div
