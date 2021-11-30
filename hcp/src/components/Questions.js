@@ -42,14 +42,14 @@ const Questions = ({
         <div
           style={{
             width: "80%",
-            height: 860,
+            height: 680,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "space-between",
           }}
         >
-          <div style={{ fontSize: 30, marginBottom: "3rem", marginTop: 30 }}>
+          <div style={{ fontSize: 25, marginBottom: "3rem", marginTop: 30 }}>
             {question.title}
           </div>
           <Radio.Group
@@ -63,7 +63,7 @@ const Questions = ({
                   value={idx}
                   style={{
                     display: "block",
-                    fontSize: 25,
+                    fontSize: 22,
                     marginBottom: "3rem",
                   }}
                 >

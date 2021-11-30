@@ -33,7 +33,7 @@ const Intro = ({ nextPage }) => {
         <div
           style={{
             width: "80%",
-            height: 860,
+            height: 680,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
